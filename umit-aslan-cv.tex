@@ -35,6 +35,9 @@
 % how far to tab for list items with left-aligned date: different fonts need different widths
 \newcommand{\listtabwidth}{1.7cm}
 
+% for slightly indented and small text
+\newcommand{\indentedsmall}[1]{\hspace{2pt}\small{#1}\normalsize}
+
 % define font to use as document's title
 \newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
 
@@ -90,7 +93,7 @@
     citecolor   = black,
     linkcolor   = black,
     pdfauthor   = {\myname},
-    pdfkeywords = {city planning, housing, street networks, transportation, urban design, urban informatics},
+    pdfkeywords = {},
     pdftitle    = {\myname: Curriculum Vitae},
     pdfsubject  = {Curriculum Vitae},
     pdfpagemode = UseNone
@@ -113,80 +116,53 @@
     \begin{minipage}[t]{0.295\textwidth}
         % contact info details, right-aligned
         \raggedleft{}
-        +1 (224) 307-3550 \\
+        +1 (224) 307--3550 \\
         \href{mailto:umitaslan@u.northwestern.edu}{umitaslan@u.northwestern.edu} \\
         \href{https://umitaslan.com}{umitaslan.com}
     \end{minipage}
+
+
+    % ------------------------
+    % ----- EDUCATION -----
+    % ------------------------
 
 
     \section*{Education}
 
     \begin{tablist}
 
-        \item[Ph.D.] \tab{}Learning Sciences, Northwestern University, Evanston, Aug 2025 (anticipated) \\
+        \item[Ph.D.] \tab{}Learning Sciences, Northwestern University, Evanston, IL, {\small Dec.} 2025  {\footnotesize (anticipated)} \\
 
         \vspace{4pt}
 
-        \footnotesize Dissertation Title: \enquote{Reimagining research methods in an age of complexity: studying people’s reasoning of complex systems through agent-based-construction [abc] interviews} \normalsize \\
+        {\small Dissertation Title: \enquote{Reimagining research methods in an age of complexity: studying people’s reasoning of complex systems through agent-based-construction [abc] interviews}} \\
 
         \vspace{4pt}
 
-        \footnotesize Committee: Uri Wilensky (chair), Sharona Levy, Bruce Sherin \normalsize \\
+        {\small Committee: Uri Wilensky (Chair), Sharona Levy, Bruce Sherin} \\
 
         \vspace{8pt}
 
-        \item[M.S.]  \tab{}Science and Mathematics Education, Bogazici University, Istanbul, 2014 \\
+        \item[M.S.]  \tab{}Science and Mathematics Education, Bogazici University, Istanbul, Turkiye, 2014 \\
 
         \vspace{4pt}
 
-        \footnotesize Thesis Title: \enquote{Fostering students' learning of probability through video game programming} \normalsize \\
+        {\small Thesis Title: \enquote{Fostering students' learning of probability through video game programming}} \\
 
         \vspace{4pt}
 
-        \footnotesize Committee: Yavuz Akpinar (chair), Gulseren Karagoz Akar, Tufan Adiguzel\normalsize
+        {\small Committee: Yavuz Akpinar (Chair), Gulseren Karagoz Akar, Tufan Adiguzel}
 
         \vspace{8pt}
 
-        \item[B.S.]  \tab{}Educational Technologies, Bogazici University, Istanbul, 2010
+        \item[B.S.]  \tab{}Educational Technologies, Bogazici University, Istanbul, Turkiye, 2010
 
     \end{tablist}
 
-%
-%
-%    \section*{Appointments}
-%
-%    \begin{tablist}
-%
-%        \item[2019--]   \tab{}University of Southern California \\
-%                              Associate Professor, Department of Urban Planning and Spatial Analysis, 2025-- \\
-%                              Faculty Affiliate, Spatial Sciences Institute, 2021-- \\
-%                              Assistant Professor, Department of Urban Planning and Spatial Analysis, 2019--25 \\
-%
-%        \item[2021--]   \tab{}Brookings Institution \\
-%                              Nonresident Senior Fellow, Metropolitan Policy Program \\
-%
-%        \item[2018--19] \tab{}Northeastern University \\
-%                              Assistant Professor, School of Public Policy and Urban Affairs \\
-%                              Faculty Affiliate, Network Science Institute \\
-%                              Faculty Affiliate, Global Resilience Institute
-%
-%        \item[2017--18] \tab{}University of California, Berkeley \\
-%                              Postdoctoral Researcher, Department of City and Regional Planning
-%
-%    \end{tablist}
 
-
-%    \section*{Research Skills}
-%
-%    \begin{itemize}
-%
-%        \item STEM education: \texttt{write details}
-%        \item Instructional Technlogies: \texttt{write details}
-%        \item Complex Systems: \texttt{write details}
-%        \item Qualitative Research: \texttt{write details}
-%
-%    \end{itemize}
-
+    % ------------------------
+    % ----- PUBLICATIONS -----
+    % ------------------------
 
     \section*{Publications}
 
@@ -194,9 +170,9 @@
 
     \begin{tablist}
 
-        \item[2024] \tab{}\textbf{Aslan, U.}, Horn, M., \& Wilensky, U. (2024). Why are some students \enquote{not into} computational thinking activities embedded within high school science units? Key takeaways from a microethnographic discourse analysis study. \textit{Science Education}, 108, 929--956. \href{https://doi.org/10.1002/sce.21850}{doi:10.1002/sce.21850}
+        \item[2024] \tab{}\textbf{Aslan, U}., Horn, M., \& Wilensky, U. (2024). Why are some students \enquote{not into} computational thinking activities embedded within high school science units? Key takeaways from a microethnographic discourse analysis study. \textit{Science Education}, 108, 929--956. \href{https://doi.org/10.1002/sce.21850}{doi:10.1002/sce.21850}
 
-        \item[2015] \tab{}Akpinay, Y. \& \textbf{Aslan, U.}. (2015). Supporting children's learning of probability through video game programming. \textit{Journal of Educational Computing Research}, 53(2), 228--259. \href{https://doi.org/10.1177/0735633115598492}{doi:10.1177/0735633115598492}
+        \item[2015] \tab{}Akpinar, Y. \& \textbf{Aslan, U}. (2015). Supporting children's learning of probability through video game programming. \textit{Journal of Educational Computing Research}, 53(2), 228--259. \href{https://doi.org/10.1177/0735633115598492}{doi:10.1177/0735633115598492}
 
     \end{tablist}
 
@@ -206,7 +182,7 @@
 
     \begin{tablist}
 
-        \item[2017] \tab{}\textbf{Aslan, U.}, Dabholkar, S., \& Wilensky, U. (2017). Developing multi-agent-based thought experiments: A case study on the evolution of gamete dimorphism. In G. Sukthankar. \& J. A. Rodriguez-Aguilar (Eds.), \textit{Autonomous Agents and Multiagent Systems: AAMAS 2017 Workshops, Best Papers}, (pp. 51--65). Springer, Verlag. \href{https://doi.org/10.1007/978-3-319-71682-4\_4}{doi:10.1007/978-3-319-71682-4\_4}
+        \item[2017] \tab{}\textbf{Aslan, U}., Dabholkar, S., \& Wilensky, U. (2017). Developing multi-agent-based thought experiments: A case study on the evolution of gamete dimorphism. In G. Sukthankar. \& J. A. Rodriguez-Aguilar (Eds.), \textit{Autonomous Agents and Multiagent Systems: AAMAS 2017 Workshops, Best Papers}, (pp. 51--65). Springer, Verlag. \href{https://doi.org/10.1007/978-3-319-71682-4\_4}{doi:10.1007/978-3-319-71682-4\_4}
 
     \end{tablist}
 
@@ -214,9 +190,9 @@
 
     \begin{tablist}
 
-        \item[] \tab{}\textbf{Aslan, U.}, Levy, S., LaGrassa, N., Davey, B., Horn, M., \& Wilensky, U. (in preparation). Connected Chemistry redux: Outcomes of a design experiment on reconstructing the CC1 unit through the CT-STEM lens.
+        \item[] \tab{}\textbf{Aslan, U}., Levy, S., LaGrassa, N., Davey, B., Horn, M., \& Wilensky, U. (in preparation). Connected Chemistry redux: Outcomes of a design experiment on reconstructing the CC1 unit through the CT-STEM lens.
 
-        \item[] \tab{}\textbf{Aslan, U.}, Dabholkar, S., Woods, P., Noel, I., \& Wilensky, U. (in preparation). Connected Chemistry Redux: Outcomes of a design experiment on reconstructing the CC1 unit through the CT-STEM lens.
+        \item[] \tab{}\textbf{Aslan, U}., Dabholkar, S., Woods, P., Noel, I., \& Wilensky, U. (in preparation). Reconstructing population-level evolutionary theories through spatially explicit multi-agent-based modeling: A case study on the evolution of anisogamy.
 
     \end{tablist}
 
@@ -224,23 +200,23 @@
 
     \begin{tablist}
 
-        \item[2021] \tab{}\textbf{Aslan, U.}, Wu, S. P., Horn, M., \& Wilensky, U. (2021). Connecting the \enquote{chemistry triplet} through co-designing computational models with teachers: A case study on calorimetry. Paper presented at \textit{American Educational Research Association (AERA) 2021 Annual Meeting}. Meeting Held Virtually. \href{https://doi.org/10.3102/1686353}{doi:10.3102/1686353}
+        \item[2021] \tab{}\textbf{Aslan, U}., Wu, S. P., Horn, M., \& Wilensky, U. (2021). Connecting the \enquote{chemistry triplet} through co-designing computational models with teachers: A case study on calorimetry. Paper presented at \textit{American Educational Research Association (AERA) 2021 Annual Meeting}. Meeting Held Virtually. \href{https://doi.org/10.3102/1686353}{doi:10.3102/1686353}
 
-        \item[2020] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. (2020). Phenomenological programming: A novel approach to designing domain-specific programming environments for science learning. In \textit{Proceedings of the Interaction Design and Children Conference (IDC) 2020}, 299--310. Virtual Meeting. \href{https://doi.org/10.1145/3392063.3394428}{doi:10.1145/3392063.3394428}
+        \item[2020] \tab{}\textbf{Aslan, U}., LaGrassa, N., Horn, M., \& Wilensky, U. (2020). Phenomenological programming: A novel approach to designing domain-specific programming environments for science learning. In \textit{Proceedings of the Interaction Design and Children Conference (IDC) 2020}, 299--310. Virtual Meeting. \href{https://doi.org/10.1145/3392063.3394428}{doi:10.1145/3392063.3394428}
 
-        \item[] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. (2020). Putting the taxonomy into practice: Investigating students’ learning of chemistry with integrated computational thinking activities. Paper accepted to \textit{American Educational Research Association (AERA) 2020 Annual Meeting}. \href{https://doi.org/10.3102/1584908}{doi:10.3102/1584908}
+        \item[] \tab{}\textbf{Aslan, U}., LaGrassa, N., Horn, M., \& Wilensky, U. (2020). Putting the taxonomy into practice: Investigating students’ learning of chemistry with integrated computational thinking activities. Paper accepted to \textit{American Educational Research Association (AERA) 2020 Annual Meeting}. \href{https://doi.org/10.3102/1584908}{doi:10.3102/1584908}
 
-        \item[] \tab{}Kelter, J. Z., Peel, A., Bain, C., Dabholkar, S., \textbf{Aslan, U.}, Horn, M., \& Wilensky, U. (2020). Seeds of (r)evolution: Constructionist co-design with high school science teachers. In \textit{Proceedings of the Constructionism Conference 2020}, 497--505.
+        \item[] \tab{}Kelter, J. Z., Peel, A., Bain, C., Dabholkar, S., \textbf{Aslan, U}., Horn, M., \& Wilensky, U. (2020). Seeds of (r)evolution: Constructionist co-design with high school science teachers. In \textit{Proceedings of the Constructionism Conference 2020}, 497--505.
 
-        \item[] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. (2020). Code-first learning environments for science education: a design experiment on kinetic molecular theory. In \textit{Proceedings of the Constructionism Conference 2020}, 206--219.
+        \item[] \tab{}\textbf{Aslan, U}., LaGrassa, N., Horn, M., \& Wilensky, U. (2020). Code-first learning environments for science education: a design experiment on kinetic molecular theory. In \textit{Proceedings of the Constructionism Conference 2020}, 206--219.
 
-        \item[2019] \tab{}\textbf{Aslan, U.}, Anton, G., Horn, M., \& Wilensky, U. (2019). Bringing powerful ideas to middle school students' lives through agent-based modeling. Paper presented at \textit{American Educational Research Association (AERA) 2019 Annual Meeting}. Toronto, ON. \href{https://doi.org/10.3102/1444571}{doi:10.3102/1444571}
+        \item[2019] \tab{}\textbf{Aslan, U}., Anton, G., Horn, M., \& Wilensky, U. (2019). Bringing powerful ideas to middle school students' lives through agent-based modeling. Paper presented at \textit{American Educational Research Association (AERA) 2019 Annual Meeting}. Toronto, ON. \href{https://doi.org/10.3102/1444571}{doi:10.3102/1444571}
 
-        \item[2018] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. (2018). Agent-based Construction (a-b-c) interviews: A generative case study. In \textit{Proceedings of the Constructionism Conference 2018}, 125--137. Vilnius, Lithuania.
+        \item[2018] \tab{}\textbf{Aslan, U}. \& Wilensky, U. (2018). Agent-based Construction (a-b-c) interviews: A generative case study. In \textit{Proceedings of the Constructionism Conference 2018}, 125--137. Vilnius, Lithuania.
 
-        \item[2017] \tab{}\textbf{Aslan, U.}, Dabholkar, S., \& Wilensky, U. (2017). Developing multi-agent-based thought experiments: A case study on the evolution of gamete dimorphism. In \textit{Proceedings of the Multi-Agent-Based Simulation Workshop XVIII, MABS 2017}, 47--61. Sao Paolo, Brazil. \href{https://doi.org/10.1007/978-3-319-91587-6\_4}{doi:10.1007/978-3-319-91587-6\_4}
+        \item[2017] \tab{}\textbf{Aslan, U}., Dabholkar, S., \& Wilensky, U. (2017). Developing multi-agent-based thought experiments: A case study on the evolution of gamete dimorphism. In \textit{Proceedings of the Multi-Agent-Based Simulation Workshop XVIII, MABS 2017}, 47--61. Sao Paolo, Brazil. \href{https://doi.org/10.1007/978-3-319-91587-6\_4}{doi:10.1007/978-3-319-91587-6\_4}
 
-        \item[2016] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. (2016). Restructuration in practice: Challenging a pop-culture evolutionary theory through agent-based modeling. In \textit{Proceedings of the Constructionism Conference 2016}, 125--137. Bangkok, Thailand.
+        \item[2016] \tab{}\textbf{Aslan, U}. \& Wilensky, U. (2016). Restructuration in practice: Challenging a pop-culture evolutionary theory through agent-based modeling. In \textit{Proceedings of the Constructionism Conference 2016}, 125--137. Bangkok, Thailand.
 
 
     \end{tablist}
@@ -249,191 +225,212 @@
 
     \begin{tablist}
 
-        \item[2021] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. (2021). Constructing the NetLogo Anisogamy model. Paper Presented at the \textit{First International Workshop on Agentization: Rendering Conventional Models with Agent-Based Computing}. Virtual meeting organized by George Mason University.
+        \item[2021] \tab{}\textbf{Aslan, U}. \& Wilensky, U. (2021). Constructing the NetLogo Anisogamy model. Paper Presented at the \textit{First International Workshop on Agentization: Rendering Conventional Models with Agent-Based Computing}. Virtual meeting organized by George Mason University.
 
-        \item[2016] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. (2016). Old tricks revisited: Studying probabilistic reasoning through incorporating computer modeling into Piagetian research. Paper Presented at the \textit{46th Annual Meeting of the Jean Piaget Society}. Chicago, IL.
+        \item[2016] \tab{}\textbf{Aslan, U}. \& Wilensky, U. (2016). Old tricks revisited: Studying probabilistic reasoning through incorporating computer modeling into Piagetian research. Paper Presented at the \textit{46th Annual Meeting of the Jean Piaget Society}. Chicago, IL.
 
-        \item[2012] \tab{}\textbf{Aslan, U.}. (2012). Fostering students' learning of mathematics through creative computing. Paper Presented at the \textit{Scratch@MIT Conference}. Cambridge, MA.
+        \item[2012] \tab{}\textbf{Aslan, U}.. (2012). Fostering students' learning of mathematics through creative computing. Paper Presented at the \textit{Scratch@MIT Conference}. Cambridge, MA.
 
     \end{tablist}
 
-% STOPPED HERE ON AUG 12th!
+
+    % ------------------------
+    % -- OTHER PUBLICATIONS --
+    % ------------------------
 
     \subsection*{Other Publications}
 
     \begin{tablist}
 
-        \item[2021] \tab{}\textbf{Aslan, U.} \& Wilensky, U. (2021). Beginner’s Interactive NetLogo Dictionary (BIND). Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL. \href{https://ccl.northwestern.edu/netlogo/bind/}{ccl.northwestern.edu/netlogo/bind/}
+        \item[2021] \tab{}\textbf{Aslan, U}. \& Wilensky, U. (2021). Beginner’s Interactive NetLogo Dictionary (BIND). Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL. \href{https://ccl.northwestern.edu/netlogo/bind/}{ccl.northwestern.edu/netlogo/bind/}
 
-        \item[]     \tab{}\textbf{Aslan, U.}, Namowicz, C., Levites, L., Horn, M., \& Wilensky, U. (2021). NetLogo Calorimetry Model (open-source computational model). Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL. \href{https://ccl.northwestern.edu/netlogo/models/Calorimetry}{https://ccl.northwestern.edu/netlogo/models/Calorimetry}.
+        \item[2020]     \tab{}Namowicz, C., Levites, L., \textbf{Aslan, U}., Lee, J., L., Horn, M., \& Wilensky, U. (2020). Energy in Chemical Reactions (open-source curricular unit). CT-STEM Research Project, Northwestern University. Evanston, IL. \href{https://ct-stem.northwestern.edu/curriculum/preview/1678/}{https://ct-stem.northwestern.edu/curriculum/preview/1678/}.
 
-        \item[]     \tab{}Namowicz, C., Levites, \textbf{Aslan, U.}, Lee, J., L., Horn, M., \& Wilensky, U. (2021). Energy in Chemical Reactions (open-source curricular unit). CT-STEM Research Project, Northwestern University. Evanston, IL. \href{https://ct-stem.northwestern.edu/curriculum/preview/1678/}{https://ct-stem.northwestern.edu/curriculum/preview/1678/}.
+        \item[]     \tab{}Namowicz, C., Lindeman, K., \textbf{Aslan, U}., Lee, J., L., Horn, M., \& Wilensky, U. (2020). Kinetic Molecular Theory (open-source curricular unit). CT-STEM Research Project, Northwestern University. Evanston, IL. \href{https://ct-stem.northwestern.edu/curriculum/preview/2620/}{https://ct-stem.northwestern.edu/curriculum/preview/2620/}.
 
-        \item[2019] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. (2019). Ideal Gas Laws - Connected Chemistry 2019 (open-source curricular unit). CT-STEM Research Project, Northwestern University. Evanston, IL. \href{https://ct-stem.northwestern.edu/curriculum/preview/565/}{https://ct-stem.northwestern.edu/curriculum/preview/565/}.
+        \item[]     \tab{}\textbf{Aslan, U}., Namowicz, C., Levites, L., Horn, M., \& Wilensky, U. (2020). NetLogo Calorimetry Model (open-source computational model). Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL. \href{https://ccl.northwestern.edu/netlogo/models/Calorimetry}{https://ccl.northwestern.edu/netlogo/models/Calorimetry}.
 
-         \item[2016]     \tab{}\textbf{Aslan, U.} \& Wilensky, U. (2019). NetLogo Anisogamy Model (open-source computational model). Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL. \href{https://ccl.northwestern.edu/netlogo/models/Anisogamy}{https://ccl.northwestern.edu/netlogo/models/Anisogamy}.
+        \item[2019] \tab{}\textbf{Aslan, U}., LaGrassa, N., Horn, M., \& Wilensky, U. (2019). Ideal Gas Laws - Connected Chemistry 2019 (open-source curricular unit). CT-STEM Research Project, Northwestern University. Evanston, IL. \href{https://ct-stem.northwestern.edu/curriculum/preview/565/}{https://ct-stem.northwestern.edu/curriculum/preview/565/}.
+
+         \item[2016]     \tab{}\textbf{Aslan, U}. \& Wilensky, U. (2016). NetLogo Anisogamy Model (open-source computational model). Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL. \href{https://ccl.northwestern.edu/netlogo/models/Anisogamy}{https://ccl.northwestern.edu/netlogo/models/Anisogamy}.
 
     \end{tablist}
 
-    \section*{Grants and Awards}
 
-    \subsection*{Awards and Honors}
+    % ------------------------
+    % - RESEARCH EXPERIENCE --
+    % ------------------------
+
+
+    \section*{Research Experience}
+
+    \subsection*{Northwestern University, Evanston, Illinois}
 
     \begin{tablist}
 
-        \item[2025] \tab{}Zephyr Foundation Exceptional Technical Achievement Award
-        \item[2024] \tab{}USC Price High Impact Research Award
-        \item[2023] \tab{}National Planning Institute of Australia Award for Planning Research Excellence (joint)
-        \item[2022] \tab{}Planning Institute of Australia (Victoria) Award for Planning Excellence---Planning Research (joint)
-        \item[2021] \tab{}USC Price ASPD Golden Apple Award for teaching excellence
-        \item[2020] \tab{}Stough-Johansson Springer Award, best WRSA paper by an early-career scholar
-        \item[2019] \tab{}Network Science Society Visualization Prize finalist
-        \item[2018] \tab{}Information Is Beautiful Awards shortlist
-        \item[2018] \tab{}ACSP FWIG Emerging Scholar Award
-        \item[2014] \tab{}Kaye Bock Award, best journal article
-        \item[2010] \tab{}Accenture Inventor Innovation Award
+        \item[2020--25] \tab{}Ph.D. Dissertation in Learning Sciences (Supervisor: Uri Wilensky) \\
+
+        \vspace{4pt}
+
+        \indentedsmall{Designed and conducted a study on people's intuitive reasoning about complex systems}  \\
+        \indentedsmall{Created a computationally-mediated research interview methodology}  \\
+        \indentedsmall{Developed a computational knowledge analysis tool using NLP and network analysis} \\
+        \indentedsmall{Published two peer-reviewed conference papers} \\
+
+        \vspace{6pt}
+
+        \item[2016--22] \tab{}Graduate Researcher, CT-STEM Research Project (Co-PIs: Uri Wilensky \& Michael Horn) \\
+
+        \vspace{4pt}
+
+        \indentedsmall{Developed novice-friendly programming activities for STEM courses} \\
+        \indentedsmall{Co-designed CT-ified curricular units in-service teachers} \\
+        \indentedsmall{Investigated students' learning of science and CT} \\
+        \indentedsmall{Published one journal article and five peer-reviewed conference papers}
 
     \end{tablist}
 
-
-    \section*{Courses Taught}
-
-    \subsection*{University of Southern California}
-
-    \begin{itemize}
-
-        \item Urban Informatics
-        \item Advanced Urban Analytics
-        \item Data, Evidence, and Communication for the Public Good
-
-    \end{itemize}
-
-    \subsection*{Northeastern University}
-
-    \begin{itemize}
-
-        \item Urban Theory and Science
-        \item Advanced Spatial Analysis of Urban Systems
-        \item Big Data for Cities
-
-    \end{itemize}
-
-    \subsection*{University of California, Berkeley}
-
-    \begin{itemize}
-
-        \item Urban Informatics and Visualization (graduate student instructor)
-
-    \end{itemize}
-
-    \subsection*{Planetizen}
-
-    \begin{itemize}
-
-        \item Python for Planners
-        \item Data Analysis and Visualization for Planners
-        \item Geospatial Data Analysis
-        \item Street Network Analysis
-
-    \end{itemize}
-
-
-
-    \section*{Service}
-
-    \subsection*{Board of Directors}
+    \subsection*{Bogazici University, Istanbul, Turkiye}
 
     \begin{tablist}
 
-       \item[2024--]    \tab{}The Public Good Projects, New York, New York
+        \item[2012--14] \tab{}Master's Thesis in Science and Mathematics Education (Supervisor: Yavuz Akpinar) \\
+
+        \vspace{4pt}
+
+        \indentedsmall{Designed a middle-school unit for teaching probability through game programming activities} \\
+        \indentedsmall{Conducted a quasi-experimental study on the effectiveness of the unit with 5th and 6th grade students} \\
+        \indentedsmall{Published a journal article}
+
+        \vspace{6pt}
+
+        \item[2012--14] \tab{}Graduate Researcher, English as a Lingua Franca Project (Co-PIs: Yasemin Bayyurt \& Nikos Sifakis) \\
+
+        \vspace{4pt}
+
+        \indentedsmall{Established an LMS platform for a year-long in-service teacher PD program} \\
+        \indentedsmall{Collected qualitative data on teachers' PD participation through the LMS}
+
+        \vspace{6pt}
+
+        \item[2012--14] \tab{}Graduate Researcher, Teaching ESL through Mobile Multimedia Project (PI: Gulcan Ercetin) \\
+
+        \vspace{4pt}
+
+        \indentedsmall{Developed an Android phone application to deliver multimedia ESL assessments} \\
+
+        \vspace{6pt}
+
+        \item[2010--12] \tab{}Graduate Researcher, Using Eye Tracking in ESL Research Project (PI: Gulcan Ercetin) \\
+
+        \vspace{4pt}
+
+        \indentedsmall{Collected eye-tracking data on ESL students' text reading strategies} \\
+        \indentedsmall{Conducted quantitative analyses of eye-tracking data} \\
 
     \end{tablist}
 
-    \subsection*{Academic Journal Editorship}
 
-    \begin{tablist}
+    % ------------------------
+    % ------ MENTORING -------
+    % ------------------------
 
-        \item[2025--]   \tab{}\textit{Geographical Analysis}, editorial board
-        \item[2025--]   \tab{}\textit{Annals of the American Association of Geographers}, editorial board
-        \item[2025--]   \tab{}\textit{Cities}, editorial board
-        \item[2025--]   \tab{}\textit{Computers, Environment and Urban Systems}, special issue guest editor
-        \item[2020--]   \tab{}\textit{Urban Findings}, editorial board
-        \item[2021--24] \tab{}\textit{Urban Studies}, editorial board
-        \item[2021]     \tab{}\textit{PLOS One}, guest academic editor
-        \item[2013--14] \tab{}\textit{Berkeley Planning Journal}, book review editor
 
-    \end{tablist}
+    \section*{Mentoring}
 
-%    \subsection*{Service to the Field}
-%
-%    \begin{tablist}
-%
-%        \item[2025--]   \tab{}American Association of Geographers, local arrangements committee
-%        \item[2025--]   \tab{}International Land Use Symposium, scientific committee
-%        \item[2024--]   \tab{}U.S. NIST Artificial Intelligence Safety Institute Consortium
-%        \item[2024--]   \tab{}Association of Collegiate Schools of Planning, artificial intelligence task force
-%        \item[2024--]   \tab{}Spatial Data Science across Languages, program committee
-%        \item[2024--]   \tab{}Western Wildfire Resilience Index, advisory committee
-%        \item[2022--]   \tab{}Global Observatory of Healthy and Sustainable Cities, executive committee
-%        \item[2021--22] \tab{}Association of Collegiate Schools of Planning, review and appraisal committee
-%        \item[2021--22] \tab{}Spatial Data Science Symposium, program committee
-%        \item[2021]     \tab{}World Society for Transport and Land Use Research, emerging data and technologies track co-lead
-%        \item[2019--21] \tab{}Association of Collegiate Schools of Planning, outreach and engagement task force
-%        \item[2019--20] \tab{}Future Cities Challenge, program committee
-%        \item[2018--20] \tab{}Association of Collegiate Schools of Planning, review and appraisal committee
-%        \item[2018--20] \tab{}Symposium on Simulation for Architecture and Urban Design, scientific committee
-%
-%    \end{tablist}
-
-%    \subsection*{Service to the University}
-%
-%    \begin{tablist}
-%        \item[2025--]   \tab{}USC Institute for Ethics \& Trust in AI
-%        \item[2024--]   \tab{}USC Price research committee
-%        \item[2024--25] \tab{}USC Price dean search committee
-%        \item[2024--25] \tab{}USC Department of Urban Planning and Spatial Analysis hiring search committee
-%        \item[2020--24] \tab{}USC Price Ph.D. degree committee
-%        \item[2024]     \tab{}USC Price Chief Technology Officer search committee
-%        \item[2022--23] \tab{}USC Healthy Campus built environment and sustainability committee
-%        \item[2020--21] \tab{}USC Price research committee
-%        \item[2019--20] \tab{}USC Department of Urban Planning and Spatial Analysis hiring search committee
-%        \item[2018--19] \tab{}Northeastern CSSH standing committee on digital proficiencies and quantitative methods
-%        \item[2015--16] \tab{}UC Berkeley DCRP Ph.D. program admissions committee
-%
-%    \end{tablist}
-
-    \subsection*{Mentoring}
+    \subsection*{Knowledge Analysis with NLP Project}
 
     \begin{itemize}
+        \item Claire Schwartz, undergraduate research assistant, 2024--25
+        \item Philip Dawny Philip, master's level research assistant, 2024--25
+    \end{itemize}
 
-        \item James Hovet, undergraduate research assistant
+    \subsection*{Beginner's Interactive NetLogo Dictionary (BIND)}
 
+    \begin{itemize}
+        \item James Hovet, undergraduate research assistant, 2021
+        \item Nala Bishop, undergraduate research assistant, 2021
+        \item Sydney Crawford, undergraduate research assistant, 2021
+    \end{itemize}
+
+    \subsection*{CT-STEM Research Project}
+
+    \begin{itemize}
+        \item Jamie Lee, undergraduate research assistant, 2019--21
+        \item Mitchell Estberg, undergraduate research assistant, 2017--18
     \end{itemize}
 
 
+    %------------------------
+    % ----- TEACHING -----
+    %------------------------
+
+
+    \section*{Teaching Experience}
+
+    \subsection*{Northwestern University, Evanston, Illinois}
+
+    \begin{tablist}
+
+        \item[2021] \tab{}Graduate Teaching Assistant, Advanced Qualitative Methods (Instructor: James Spillane)
+
+        \item[2021] \tab{}Graduate Teaching Assistant, Mapping and Spatial Analysis (Instructor: David Uttal)
+
+        \item[2017--19] \tab{}Graduate Teaching Assistant, Design of Technological Tools for Thinking and Learning (Instructor: Uri Wilensky)
+
+    \end{tablist}
+
+    \subsection*{Center for Talent Development, Evanston, Illinois}
+
+    \begin{tablist}
+
+        \item[2025] \tab{}Instructor, Brain and Behavior, CTD Summer Camp for Gifted Students (Grades 6--8)
+
+        \item[2018] \tab{}Instructor, Using Technology to Solve Society's Tough Problems, CTD Weekend Enrichment Program for Gifted Students (Grades 6--8)
+
+        \item[2016] \tab{}Instructor, Modeling Social and Natural Worlds With NetLogo, CTD Weekend Enrichment Program for Gifted Students (Grades 6--8)
+
+    \end{tablist}
+
+    \subsection*{Istanbul Topkapi University, Istanbul, Turkiye}
+
+    \begin{tablist}
+
+        \item[2013] \tab{}Adjunct Instructor, Web Design and Development
+
+        \item[2011-2013] \tab{}Adjunct Instructor, Introduction to Mathematics for Creative Professionals
+
+    \end{tablist}
+
+
+    % ------------------------
+    % ----- SERVICE -----
+    % ------------------------
 
     \section*{Peer Review}
 
-    \subsection*{Academic Journal Peer Review}
+    \subsection*{Academic Journal Peer Reviewer}
 
     \begin{itemize}
 
-        \item \textit{Journal of Educational Computing Research}
-        \item \textit{Journal of Research in Science Teaching}
-        \item \textit{Science Education}
-
+        \item ACM Transactions on Computer-Human Interaction
+        \item Journal of Educational Computing Research
+        \item Journal of Research in Science Teaching
+        \item Journal of Science Education and Technology
+        \item Science Education
+        \item Studies in Science Education
 
     \end{itemize}
 
 
-    \subsection*{Conference Peer Review}
+    \subsection*{Conference Peer Reviewer}
 
     \begin{itemize}
 
         \item ACM Conference on Interaction Design and Children (IDC)
-        \item ACM Conference on Computer-Human Interaction (CHI)
+        \item ACM Conference on Human Factors in Computer Systems (CHI)
         \item Annual Meeting of the American Educational Research Association (AERA)%, 2019--2024
-        \item National Association for Research in Science Teaching (NARST) Conference
+        \item Annual International Conference of the National Association for Research in Science Teaching (NARST)
 
     \end{itemize}
 
@@ -443,11 +440,24 @@
 
     \begin{itemize}
 
-        \item Association of Computing Machinery (ACM)
+        \item Association for Computing Machinery (ACM)
         \item American Educational Research Association (AERA)
+        \item American Psychological Association (APA)
+        \item International Society of the Learning Sciences (ISLS)
         \item National Association for Research in Science Teaching (NARST)
 
     \end{itemize}
+
+
+    \section*{Grants}
+
+    \begin{tablist}
+
+        \item[2020] \tab{}Research Grant, Office of Undergraduate Research, Northwestern University, \$3,500.00 USD
+        \item[2013] \tab{}Innovation Grant, Scientific and Technological Research Council of Turkey, \$121,000.00 USD
+        \item[2011--12] \tab{}Teacher PD Grant, Google Computer Science for High School (CS4HS) Initiative, \$10,000.00 USD
+
+    \end{tablist}
 
 
 
@@ -455,19 +465,81 @@
 
     \begin{tablist}
 
-        \item[2019--24] \tab{}Roamers Therapy, Chicago, IL
-        \item[2013--14] \tab{}Plato R\&D, Istanbul, Turkiye
-        \item[2011--13] \tab{}Ayvansaray University, Istanbul, Turkiye
-        \item[2010--11] \tab{}Aydin University, Istanbul, Turkiye
+        \item[2019--24] \tab{}Operations Manager, \textit{Roamers Therapy}, Chicago, IL
+        \item[2016--22] \tab{}Graduate Research Assistant, \textit{Northwestern University}, Evanston, IL
+        \item[2013--14] \tab{}Software Developer, \textit{Odyssey R\&D}, Istanbul, Turkiye
+        \item[2011--13] \tab{}Software Developer \& Adjunct Instructor, \textit{Istanbul Topkapi University}, Istanbul, Turkiye
+        \item[2010--11] \tab{}Software Developer, \textit{Istanbul Aydin University}, Istanbul, Turkiye
 
     \end{tablist}
 
 
 
+
+    \section*{Spoken Languages}
+
+    \begin{itemize}
+
+        \item Turkish, Native Tongue
+        \item English, Fluent
+        \item Spanish, Conversational
+
+    \end{itemize}
+
+
+    % ------------------------
+    % ------ REFERENCES ------
+    % ------------------------
+
+
+    \section*{References}
+
+    \subsection*{Dr. Uri Wilensky}
+
+    \begin{itemize}
+
+        \item Northwestern University
+        \item Professor of Learning Sciences, Computer Science, Cognitive Science, and Complex Systems
+        \item Co-Chair,  Computer Science \& Learning Sciences Ph.D. Program
+        \item Director, Center for Connected Learning and Computer-Based Modeling
+        \item Email: \href{mailto: uri@northwestern.edu}{uri@northwestern.edu}
+        \item Phone: (847) 467--7593
+        \item Address: 2120 Campus Drive, Evanston, IL, 60208
+
+        \end{itemize}
+
+
+    \subsection*{Dr. Michael Horn}
+
+    \begin{itemize}
+
+        \item Northwestern University
+        \item Professor of Learning Sciences and Computer Science
+        \item Co-Chair,  Computer Science \& Learning Sciences Ph.D. Program
+        \item Director, Tangible Interaction Design and Learning Laboratory
+        \item Email: \href{mailto: michael-horn@northwestern.edu}{michael-horn@northwestern.edu}
+        \item Phone: (617) 803--5501
+        \item Address: 2120 Campus Drive, Evanston, IL, 60208
+
+    \end{itemize}
+
+
+    \subsection*{Dr. Sharona Levy}
+
+    \begin{itemize}
+        \item University of Haifa
+        \item Professor of Learning, Instruction, and Teaching
+        \item Head of Systems Learning \& Development Lab
+        \item Email: \href{mailto: stlevy@edu.haifa.ac.il}{stlevy@edu.haifa.ac.il}
+        \item Phone: (224) 307--3733
+        \item Address: 199 Aba Khoushy Ave. Mount Carmel, Haifa, Israel 3498838
+    \end{itemize}
+
+
     % display today's date as Month Year after a vertical space below the end of the text
     \begin{center}
         \vfill
-        Last updated on \monthyeardate\today
+        \monthyeardate\today
     \end{center}
 
 \end{document}
