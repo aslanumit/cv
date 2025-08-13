@@ -1,0 +1,467 @@
+% !TeX program = pdflatex
+% Geoff Boeing's Curriculum Vitae
+% Email: boeing@usc.edu
+% Web: https://geoffboeing.com/
+% Repo: https://github.com/gboeing/cv
+
+\RequirePackage[l2tabu,orthodox]{nag} % warn if using any obsolete commands
+\documentclass[11pt,letterpaper]{report} % document style
+
+% load encoding and font packages for pdflatex, in order
+\usepackage[T1]{fontenc}    % output 8-bit encoded fonts
+\usepackage[utf8]{inputenc} % allow input of utf-8 encoded characters
+\usepackage{ebgaramond}     % document's serif font
+\usepackage{helvet}        % document's sans serif font
+
+% load babel, csquotes, and microtype in order
+\usepackage[USenglish]{babel} % auto-regionalize hyphens, quote marks, etc
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[babel=true]{microtype} % enable micro-typographic adjustments
+
+% load everything else
+\usepackage{datetime} % enable formatting of date output
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{geometry} % manually set page margins
+\usepackage{setspace} % custom line spacing
+\usepackage{tabto}    % make nice tabbing
+\usepackage{titlesec} % allow custom section fonts
+
+% load hyperref last for compatibility
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+
+% what is your name?
+\newcommand{\myname}{Umit Aslan}
+
+% how far to tab for list items with left-aligned date: different fonts need different widths
+\newcommand{\listtabwidth}{1.7cm}
+
+% define font to use as document's title
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*, family=\sfdefault}{30} % increase heading font tracking
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
+
+% set page margins (assumes letter paper)
+\geometry{body={6.5in, 9.0in},
+    left=1.0in,
+    top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% set line spacing
+\setstretch{0.9}
+
+% define space between list items
+\newcommand{\listitemspace}{0.25em}
+
+% make unordered lists without bullets and use compact spacing
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+                \setlength{\parskip}{0em}
+                \setlength{\itemsep}{\listitemspace}
+                \setlength{\parsep}{\listitemspace}}}
+{\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+% print only the month and year when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    citecolor   = black,
+    linkcolor   = black,
+    pdfauthor   = {\myname},
+    pdfkeywords = {city planning, housing, street networks, transportation, urban design, urban informatics},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\begin{document}
+    \raggedright{}
+
+    % display your name as the document title
+    \namefont{\myname}
+
+    % affiliation and contact info blocks
+    \vspace{1em}
+    \begin{minipage}[t]{0.700\textwidth}
+        % current primary affiliation, left-aligned
+        Ph.D.\ Candidate in Learning Sciences \\
+        School of Education and Social Policy \\
+        Northwestern University
+    \end{minipage}
+    \begin{minipage}[t]{0.295\textwidth}
+        % contact info details, right-aligned
+        \raggedleft{}
+        \href{mailto:umitaslan@u.northwestern.edu}{umitaslan@u.northwestern.edu} \\
+        +1 224 307 3550 \\
+        \href{https://umitaslan.com}{umitaslan.com}
+    \end{minipage}
+
+
+    \section*{Education}
+
+    \begin{tablist}
+
+        \item[Ph.D.] \tab{}Learning Sciences, Northwestern University, Evanston, Aug 2025 (anticipated)
+        \item[]      \tab{}\footnotesize\textbf{Dissertation Title:} Reimagining research methods in an age of complexity: studying people’s reasoning of complex systems through agent-based-construction [abc] interviews \\
+
+        \vspace{4pt}
+
+        \textbf{Committee:} Uri Wilensky (chair), Sharona Levy, Bruce Sherin \\
+
+        \vspace{4pt}
+
+        \textbf{Abstract:} \normalsize
+
+        \vspace{12pt}
+
+        \item[M.S.]  \tab{}Science and Mathematics Education, Bogazici University, Istanbul, 2014 \\
+
+        \vspace{4pt}
+
+        \item[]      \tab{}\footnotesize\textbf{Thesis Title:} Fostering students' learning of probability through video game programming \\
+
+        \vspace{4pt}
+
+        \textbf{Committee:} Yavuz Akpinar (chair), Gulseren Karagoz Akar, Tufan Adiguzel\normalsize
+
+        \vspace{12pt}
+
+        \item[B.S.]  \tab{}Educational Technologies, Bogazici University, Istanbul, 2010
+
+    \end{tablist}
+
+%
+%
+%    \section*{Appointments}
+%
+%    \begin{tablist}
+%
+%        \item[2019--]   \tab{}University of Southern California \\
+%                              Associate Professor, Department of Urban Planning and Spatial Analysis, 2025-- \\
+%                              Faculty Affiliate, Spatial Sciences Institute, 2021-- \\
+%                              Assistant Professor, Department of Urban Planning and Spatial Analysis, 2019--25 \\
+%
+%        \item[2021--]   \tab{}Brookings Institution \\
+%                              Nonresident Senior Fellow, Metropolitan Policy Program \\
+%
+%        \item[2018--19] \tab{}Northeastern University \\
+%                              Assistant Professor, School of Public Policy and Urban Affairs \\
+%                              Faculty Affiliate, Network Science Institute \\
+%                              Faculty Affiliate, Global Resilience Institute
+%
+%        \item[2017--18] \tab{}University of California, Berkeley \\
+%                              Postdoctoral Researcher, Department of City and Regional Planning
+%
+%    \end{tablist}
+
+
+%    \section*{Research Skills}
+%
+%    \begin{itemize}
+%
+%        \item STEM education: \texttt{write details}
+%        \item Instructional Technlogies: \texttt{write details}
+%        \item Complex Systems: \texttt{write details}
+%        \item Qualitative Research: \texttt{write details}
+%
+%    \end{itemize}
+
+
+    \section*{Publications}
+
+    \subsection*{Journal Articles}
+
+    \begin{tablist}
+
+        \item[2024] \tab{}\textbf{Aslan, U.}, Horn, M., \& Wilensky, U. Why are some students \enquote{not into} computational thinking activities embedded within high school science units? Key takeaways from a microethnographic discourse analysis study. \textit{Science Education}, 108, 929--956. \href{https://doi.org/10.1002/sce.21850}{doi:10.1002/sce.21850}
+
+        \item[2015] \tab{}Akpinay, Y. \& \textbf{Aslan, U.}. Supporting children's learning of probability through video game programming. \textit{Journal of Educational Computing Research}, 53(2), 228--259. \href{https://doi.org/10.1177/0735633115598492}{doi:10.1177/0735633115598492}
+
+    \end{tablist}
+
+
+
+    \subsection*{Book Chapters}
+
+    \begin{tablist}
+
+        \item[2017] \tab{}\textbf{Aslan, U.}, Dabholkar, S., \& Wilensky, U. Developing multi-agent-based thought experiments: A case study on the evolution of gamete dimorphism. In G. Sukthankar. \& J. A. Rodriguez-Aguilar (Eds.), \textit{Autonomous Agents and Multiagent Systems: AAMAS 2017 Workshops, Best Papers}, (pp. 51--65). Springer, Verlag. \href{https://doi.org/10.1007/978-3-319-71682-4\_4}{doi:10.1007/978-3-319-71682-4\_4}
+
+    \end{tablist}
+
+    \subsection*{Journal Articles (in preparation)}
+
+    \begin{tablist}
+
+        \item[in prep.] \tab{}\textbf{Aslan, U.}, Levy, S., LaGrassa, N., Davey, B., Horn, M., \& Wilensky, U. Connected Chemistry redux: Outcomes of a design experiment on reconstructing the CC1 unit through the CT-STEM lens.
+
+        \item[in prep.] \tab{}\textbf{Aslan, U.}, Dabholkar, S., Woods, P., Noel, I., \& Wilensky, U. Connected Chemistry Redux: Outcomes of a design experiment on reconstructing the CC1 unit through the CT-STEM lens.
+
+    \end{tablist}
+
+    \subsection*{Conference Papers (peer reviewed)}
+
+    \begin{tablist}
+
+        \item[2021] \tab{}\textbf{Aslan, U.}, Wu, S. P., Horn, M., \& Wilensky, U. Connecting the \enquote{chemistry triplet} through co-designing computational models with teachers: A case study on calorimetry. Paper presented at \textit{American Educational Research Association (AERA) 2021 Annual Meeting}. Meeting Held Virtually. \href{https://doi.org/10.3102/1686353}{doi:10.3102/1686353}
+
+        \item[2020] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. Phenomenological programming: A novel approach to designing domain-specific programming environments for science learning. In \textit{Proceedings of the Interaction Design and Children Conference (IDC) 2020}, 299--310. Virtual Meeting. \href{https://doi.org/10.1145/3392063.3394428}{doi:10.1145/3392063.3394428}
+
+        \item[] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. Putting the taxonomy into practice: Investigating students’ learning of chemistry with integrated computational thinking activities. Paper accepted to \textit{American Educational Research Association (AERA) 2020 Annual Meeting}. \href{https://doi.org/10.3102/1584908}{doi:10.3102/1584908}
+
+        \item[] \tab{}Kelter, J. Z., Peel, A., Bain, C., Dabholkar, S., \textbf{Aslan, U.}, Horn, M., \& Wilensky, U. Seeds of (r)evolution: Constructionist co-design with high school science teachers. In \textit{Proceedings of the Constructionism Conference 2020}, 497--505.
+
+        \item[] \tab{}\textbf{Aslan, U.}, LaGrassa, N., Horn, M., \& Wilensky, U. Code-first learning environments for science education: a design experiment on kinetic molecular theory. In \textit{Proceedings of the Constructionism Conference 2020}, 206--219.
+
+        \item[2019] \tab{}\textbf{Aslan, U.}, Anton, G., Horn, M., \& Wilensky, U. Bringing powerful ideas to middle school students' lives through agent-based modeling. Paper presented at \textit{American Educational Research Association (AERA) 2019 Annual Meeting}. Toronto, ON. \href{https://doi.org/10.3102/1444571}{doi:10.3102/1444571}
+
+        \item[2018] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. Agent-based Construction (a-b-c) interviews: A generative case study. In \textit{Proceedings of the Constructionism Conference 2018}, 125--137. Vilnius, Lithuania.
+
+        \item[2017] \tab{}\textbf{Aslan, U.}, Dabholkar, S., \& Wilensky, U. Developing multi-agent-based thought experiments: A case study on the evolution of gamete dimorphism. In \textit{Proceedings of the Multi-Agent-Based Simulation Workshop XVIII, MABS 2017}, 47--61. Sao Paolo, Brazil. \href{https://doi.org/10.1007/978-3-319-91587-6\_4}{doi:10.1007/978-3-319-91587-6\_4}
+
+        \item[2016] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. Restructuration in practice: Challenging a pop-culture evolutionary theory through agent-based modeling. In \textit{Proceedings of the Constructionism Conference 2016}, 125--137. Bangkok, Thailand.
+
+
+    \end{tablist}
+
+    \subsection*{Conference Presentations (abstract reviewed)}
+
+    \begin{tablist}
+
+        \item[2021] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. Constructing the NetLogo Anisogamy model. Paper Presented at the \textit{First International Workshop on Agentization: Rendering Conventional Models with Agent-Based Computing}. Virtual meeting organized by George Mason University.
+
+        \item[2016] \tab{}\textbf{Aslan, U.}, \& Wilensky, U. Old tricks revisited: Studying probabilistic reasoning through incorporating computer modeling into Piagetian research. Paper Presented at the \textit{46th Annual Meeting of the Jean Piaget Society}. Chicago, IL.
+
+        \item[2012] \tab{}\textbf{Aslan, U.}. Fostering students' learning of mathematics through creative computing. Paper Presented at the \textit{Scratch@MIT Conference}. Cambridge, MA.
+
+    \end{tablist}
+
+% STOPPED HERE ON AUG 12th!
+
+    \subsection*{Other Publications}
+
+    \begin{tablist}
+
+        \item[2023] \tab{}R. Sanchez-Moyano, G. Boeing, and J.~G. Harten. \enquote{The Promises and Pitfalls of Housing Search Digitalization.} Federal Reserve Bank of San Francisco. Jun 28. \href{https://bit.ly/43dlGwo}{https://bit.ly/43dlGwo}
+
+
+    \end{tablist}
+
+    \section*{Grants and Awards}
+
+    \subsection*{Awards and Honors}
+
+    \begin{tablist}
+
+        \item[2025] \tab{}Zephyr Foundation Exceptional Technical Achievement Award
+        \item[2024] \tab{}USC Price High Impact Research Award
+        \item[2023] \tab{}National Planning Institute of Australia Award for Planning Research Excellence (joint)
+        \item[2022] \tab{}Planning Institute of Australia (Victoria) Award for Planning Excellence---Planning Research (joint)
+        \item[2021] \tab{}USC Price ASPD Golden Apple Award for teaching excellence
+        \item[2020] \tab{}Stough-Johansson Springer Award, best WRSA paper by an early-career scholar
+        \item[2019] \tab{}Network Science Society Visualization Prize finalist
+        \item[2018] \tab{}Information Is Beautiful Awards shortlist
+        \item[2018] \tab{}ACSP FWIG Emerging Scholar Award
+        \item[2014] \tab{}Kaye Bock Award, best journal article
+        \item[2010] \tab{}Accenture Inventor Innovation Award
+
+    \end{tablist}
+
+
+    \section*{Courses Taught}
+
+    \subsection*{University of Southern California}
+
+    \begin{itemize}
+
+        \item Urban Informatics
+        \item Advanced Urban Analytics
+        \item Data, Evidence, and Communication for the Public Good
+
+    \end{itemize}
+
+    \subsection*{Northeastern University}
+
+    \begin{itemize}
+
+        \item Urban Theory and Science
+        \item Advanced Spatial Analysis of Urban Systems
+        \item Big Data for Cities
+
+    \end{itemize}
+
+    \subsection*{University of California, Berkeley}
+
+    \begin{itemize}
+
+        \item Urban Informatics and Visualization (graduate student instructor)
+
+    \end{itemize}
+
+    \subsection*{Planetizen}
+
+    \begin{itemize}
+
+        \item Python for Planners
+        \item Data Analysis and Visualization for Planners
+        \item Geospatial Data Analysis
+        \item Street Network Analysis
+
+    \end{itemize}
+
+
+
+    \section*{Service}
+
+    \subsection*{Board of Directors}
+
+    \begin{tablist}
+
+       \item[2024--]    \tab{}The Public Good Projects, New York, New York
+
+    \end{tablist}
+
+    \subsection*{Academic Journal Editorship}
+
+    \begin{tablist}
+
+        \item[2025--]   \tab{}\textit{Geographical Analysis}, editorial board
+        \item[2025--]   \tab{}\textit{Annals of the American Association of Geographers}, editorial board
+        \item[2025--]   \tab{}\textit{Cities}, editorial board
+        \item[2025--]   \tab{}\textit{Computers, Environment and Urban Systems}, special issue guest editor
+        \item[2020--]   \tab{}\textit{Urban Findings}, editorial board
+        \item[2021--24] \tab{}\textit{Urban Studies}, editorial board
+        \item[2021]     \tab{}\textit{PLOS One}, guest academic editor
+        \item[2013--14] \tab{}\textit{Berkeley Planning Journal}, book review editor
+
+    \end{tablist}
+
+%    \subsection*{Service to the Field}
+%
+%    \begin{tablist}
+%
+%        \item[2025--]   \tab{}American Association of Geographers, local arrangements committee
+%        \item[2025--]   \tab{}International Land Use Symposium, scientific committee
+%        \item[2024--]   \tab{}U.S. NIST Artificial Intelligence Safety Institute Consortium
+%        \item[2024--]   \tab{}Association of Collegiate Schools of Planning, artificial intelligence task force
+%        \item[2024--]   \tab{}Spatial Data Science across Languages, program committee
+%        \item[2024--]   \tab{}Western Wildfire Resilience Index, advisory committee
+%        \item[2022--]   \tab{}Global Observatory of Healthy and Sustainable Cities, executive committee
+%        \item[2021--22] \tab{}Association of Collegiate Schools of Planning, review and appraisal committee
+%        \item[2021--22] \tab{}Spatial Data Science Symposium, program committee
+%        \item[2021]     \tab{}World Society for Transport and Land Use Research, emerging data and technologies track co-lead
+%        \item[2019--21] \tab{}Association of Collegiate Schools of Planning, outreach and engagement task force
+%        \item[2019--20] \tab{}Future Cities Challenge, program committee
+%        \item[2018--20] \tab{}Association of Collegiate Schools of Planning, review and appraisal committee
+%        \item[2018--20] \tab{}Symposium on Simulation for Architecture and Urban Design, scientific committee
+%
+%    \end{tablist}
+
+%    \subsection*{Service to the University}
+%
+%    \begin{tablist}
+%        \item[2025--]   \tab{}USC Institute for Ethics \& Trust in AI
+%        \item[2024--]   \tab{}USC Price research committee
+%        \item[2024--25] \tab{}USC Price dean search committee
+%        \item[2024--25] \tab{}USC Department of Urban Planning and Spatial Analysis hiring search committee
+%        \item[2020--24] \tab{}USC Price Ph.D. degree committee
+%        \item[2024]     \tab{}USC Price Chief Technology Officer search committee
+%        \item[2022--23] \tab{}USC Healthy Campus built environment and sustainability committee
+%        \item[2020--21] \tab{}USC Price research committee
+%        \item[2019--20] \tab{}USC Department of Urban Planning and Spatial Analysis hiring search committee
+%        \item[2018--19] \tab{}Northeastern CSSH standing committee on digital proficiencies and quantitative methods
+%        \item[2015--16] \tab{}UC Berkeley DCRP Ph.D. program admissions committee
+%
+%    \end{tablist}
+
+    \subsection*{Mentoring}
+
+    \begin{itemize}
+
+        \item James Hovet, undergraduate research assistant
+
+    \end{itemize}
+
+
+
+    \section*{Peer Review}
+
+    \subsection*{Academic Journal Peer Review}
+
+    \begin{itemize}
+
+        \item \textit{Journal of Educational Computing Research}
+        \item \textit{Journal of Research in Science Teaching}
+        \item \textit{Science Education}
+
+
+    \end{itemize}
+
+
+    \subsection*{Conference Peer Review}
+
+    \begin{itemize}
+
+        \item ACM Conference on Interaction Design and Children (IDC)
+        \item ACM Conference on Computer-Human Interaction (CHI)
+        \item Annual Meeting of the American Educational Research Association (AERA)%, 2019--2024
+        \item National Association for Research in Science Teaching (NARST) Conference
+
+    \end{itemize}
+
+
+
+    \section*{Memberships}
+
+    \begin{itemize}
+
+        \item Association of Computing Machinery (ACM)
+        \item American Educational Research Association (AERA)
+        \item National Association for Research in Science Teaching (NARST)
+
+    \end{itemize}
+
+
+
+    \section*{Professional Employment}
+
+    \begin{tablist}
+
+        \item[2019--24] \tab{}Roamers Therapy, Chicago, IL
+        \item[2013--14] \tab{}Plato R\&D, Istanbul, Turkiye
+        \item[2011--13] \tab{}Ayvansaray University, Istanbul, Turkiye
+        \item[2010--11] \tab{}Aydin University, Istanbul, Turkiye
+
+    \end{tablist}
+
+
+
+    % display today's date as Month Year after a vertical space below the end of the text
+    \begin{center}
+        \vfill
+        Last updated on \monthyeardate\today
+    \end{center}
+
+\end{document}
