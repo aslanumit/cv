@@ -1,2 +1,0 @@
-- name: Latexmk
-  uses: hspaans/latexmk-action@v2.1.1
