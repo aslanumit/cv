@@ -1,0 +1,35 @@
+name: Build and Release CV
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: umit-aslan-cv.tex
+          latexmk_use_pdflatex: true
+
+      - name: Get short commit SHA
+        id: vars
+        run: echo "sha_short=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub release and upload PDF
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: cv-${{ steps.vars.outputs.sha_short }}
+          name: CV – ${{ steps.vars.outputs.sha_short }}
+          body: "Auto-generated PDF from commit ${{ github.sha }}"
+          files: umit-aslan-cv.pdf
+          make_latest: true
