@@ -21,15 +21,17 @@ jobs:
           root_file: umit-aslan-cv.tex
           latexmk_use_pdflatex: true
 
-      - name: Get short commit SHA
+      - name: Get release metadata
         id: vars
-        run: echo "sha_short=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "sha_short=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+          echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub release and upload PDF
         uses: softprops/action-gh-release@v2
         with:
           tag_name: cv-${{ steps.vars.outputs.sha_short }}
-          name: CV – ${{ steps.vars.outputs.sha_short }}
+          name: Aslan CV – ${{ steps.vars.outputs.date }}
           body: "Auto-generated PDF from commit ${{ github.sha }}"
           files: umit-aslan-cv.pdf
           make_latest: true
