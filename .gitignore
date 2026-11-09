@@ -2,6 +2,12 @@ secrets.txt
 .DS_Store
 *.pdf
 
+# latexmk auxiliary directory (see .latexmkrc)
+build/
+
+# local working notes: ignore all Markdown files (README.md is already tracked, so it stays in the repo)
+*.md
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
