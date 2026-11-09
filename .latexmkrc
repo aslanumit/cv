@@ -4,3 +4,5 @@ $pdf_mode    = 1;        # build a PDF with pdflatex (plain `latexmk` otherwise 
 $aux_dir     = 'build';  # auxiliary files (.aux, .log, .fls, .fdb_latexmk, .out) go here
 $out_dir     = '.';      # the final PDF stays in the repo root (the release workflow expects it there)
 $emulate_aux = 1;        # TeX Live engines lack -aux-directory, so latexmk emulates it
+
+set_tex_cmds('-synctex=1 %O %S');  # SyncTeX for editor <-> PDF viewer jumping
